@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Playfair+Display&display=swap");
+:root {
+  --font-style: "Assistant", sans-serif;
+}
+
+body {
+  font-family: var(--font-style);
+  background-color: #1c2a44;
+  
+}
+
+ul {
+  margin: 5%;
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 20px 0;
+  border-radius: 25px;
+  border: 0.1px solid #099fff;
+  background-color: #18181b;
+  box-shadow: 0 4px 8px 0 #00FFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+li:after {
+  display: block;
+  content: "";
+  border: 0.5px solid #099fff;
+  visibility: hidden;
+}
+
+li:hover:after {
+  transform: scaleX(0);
+  visibility: visible;
+  animation: underline 0.5s linear;
+  animation-fill-mode: both;
+}
+
+@keyframes underline {
+50%{
+    transform: scaleX(0.5);
+}
+100%{
+    transform: scaleX(1);
+}
