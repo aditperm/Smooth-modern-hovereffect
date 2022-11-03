@@ -6,8 +6,6 @@
 body {
   font-family: var(--font-style);
   background-color: #1c2a44;
-  
-  
 }
 
 ul {
@@ -20,7 +18,7 @@ ul {
   border-radius: 25px;
   border: 0.1px solid #099fff;
   background-color: #18181b;
-  box-shadow: 0 4px 8px 0 #00FF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 #00ff, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 li {
@@ -45,9 +43,10 @@ li:hover:after {
 }
 
 @keyframes underline {
-50%{
+  50% {
     transform: scaleX(0.5);
-}
-100%{
+  }
+  100% {
     transform: scaleX(1);
+  }
 }
